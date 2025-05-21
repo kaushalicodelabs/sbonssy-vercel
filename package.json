@@ -1,0 +1,45 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@mapbox/mapbox-sdk": "^0.16.1",
+    "@mapbox/search-js-react": "^1.0.0",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.4",
+    "axios": "^1.8.4",
+    "cloudinary": "^2.6.0",
+    "express-rate-limit": "^7.5.0",
+    "formik": "^2.4.6",
+    "mapbox-gl": "^3.12.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.13.2",
+    "next": "15.3.1",
+    "next-intl": "^4.1.0",
+    "nodemailer": "^6.10.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-map-gl": "^8.0.4",
+    "react-paginate": "^8.3.0",
+    "react-select": "^5.10.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "swiper": "^11.2.6",
+    "yup": "^1.6.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  }
+}

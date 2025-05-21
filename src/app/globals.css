@@ -1,0 +1,570 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Sunset Gothic Pro";
+  src: url(../../public/assets/font/sunset-gothic-font/Sunset-Gothic-Pro.ttf);
+}
+
+:root {
+  --reddishPurple: #390a21;
+  --orange: #f26915;
+  --textColor: #0c0d06;
+  --neonGreen: #f9fd99;
+  --gray: #CCCCCC;
+
+
+  /* bg */
+  --bgWhiteSmoke: #f1f1f1;
+  --bgGraySmoke: #ebedf0;
+  --bglightSmoke: #F3F3F2;
+  --bglightGray: #F2F2F2;
+}
+
+body {
+  font-family: "Sunset Gothic Pro";
+  overflow-x: hidden;
+}
+
+#mc_embed_signup {
+  & .button {
+    padding: 0 1rem !important;
+  }
+}
+
+.bg-reddishPurple {
+  background-color: var(--reddishPurple);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-neonGreen {
+  background-color: var(--neonGreen);
+}
+
+.bg-bgGraySmoke {
+  background-color: var(--bgGraySmoke);
+}
+
+.bg-whiteSmoke {
+  background-color: var(--bgWhiteSmoke);
+}
+
+.text-textColor {
+  color: var(--textColor);
+}
+
+.text-reddishPurple {
+  color: var(--reddishPurple);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.border-textColor {
+  background-color: var(--textColor);
+}
+
+.hover-text-white-force {
+  color: #fff !important;
+}
+
+.shadow-tabCustom {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-shadow {
+  box-shadow: 0 1px 2px rgba(12, 13, 6, 0.05), inset 0 -2px 1px rgba(12, 13, 6, 0.05);
+}
+
+@layer {
+  h2 {
+    font-family: "Sunset Gothic Pro";
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 36px; */
+    line-height: 120%;
+    letter-spacing: -0.01em;
+
+    @media (min-width: 1024px) {
+      /* font-size: 48px; */
+    }
+  }
+
+  ul li {
+    font-family: "Sunset Gothic Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.SportAmbassadorsCarouselWrapper,
+.ShopSmarterCarouselWrapper,
+.outTeamCarouselWrapper {
+  .swiper-wrapper {
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      padding-left: 32px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-left: 62px;
+    }
+
+    @media (min-width: 1500px) {
+      padding-left: 60px;
+    }
+  }
+}
+
+/* button styling is here */
+.primaryBtn {
+  background: var(--orange);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 32px 24px rgba(255, 255, 255, 0.05),
+    inset 0px 2px 1px rgba(255, 255, 255, 0.25),
+    inset 0px 0px 0px 1px rgba(12, 13, 6, 0.15),
+    inset 0px -2px 1px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 99rem;
+  font-family: "Sunset Gothic Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 10px 20px;
+  height: fit-content;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    padding: 10px 20px;
+  }
+}
+
+.primaryBtnPurple {
+  background: var(--reddishPurple);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 32px 24px rgba(255, 255, 255, 0.05),
+    inset 0px 2px 1px rgba(255, 255, 255, 0.25),
+    inset 0px 0px 0px 1px rgba(12, 13, 6, 0.15),
+    inset 0px -2px 1px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 99rem;
+  font-family: "Sunset Gothic Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 10px 20px;
+  height: fit-content;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    padding: 10px 20px;
+  }
+}
+
+.primaryBtnGreen {
+  background: var(--neonGreen);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 32px 24px rgba(255, 255, 255, 0.05),
+    inset 0px 2px 1px rgba(255, 255, 255, 0.25),
+    inset 0px 0px 0px 1px rgba(12, 13, 6, 0.15),
+    inset 0px -2px 1px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 99rem;
+  font-family: "Sunset Gothic Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0c0d06;
+  padding: 10px 20px;
+  height: fit-content;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    padding: 10px 20px;
+  }
+}
+
+.primaryBtnPlain {
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--orange);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 0px 0px 1px rgba(12, 13, 6, 0.05),
+    inset 0px -2px 1px rgba(12, 13, 6, 0.05);
+  border-radius: 99rem;
+  padding: 10px 24px;
+  cursor: pointer;
+  /* color: #fff; */
+}
+
+.primaryBtnPlainPurple {
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--reddishPurple);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 0px 0px 1px rgba(12, 13, 6, 0.05),
+    inset 0px -2px 1px rgba(12, 13, 6, 0.05);
+  border-radius: 99rem;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1),
+    inset 0px -2px 1px rgba(12, 13, 6, 0.05);
+  border-radius: 99rem;
+  /* color: #fff; */
+  font-size: 16px;
+  font-family: "Sunset Gothic Pro";
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    padding: 10px 24px;
+  }
+}
+
+/* button styling end here */
+
+/* inputing styling is here */
+.defaultInput[type="text"],
+.defaultInput[type="email"] {
+  height: 24px;
+  font-size: 16px;
+  font-family: "Sunset Gothic Pro";
+  background: #ffffff0d;
+  border-radius: 12px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-height: 40px;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  /* 
+  &:focus,
+  &:focus-visible,
+  &:target {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    offset: unset !important;
+  } */
+}
+
+.drawALine {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    height: calc(100% - 72px);
+    width: 0;
+    background: rgba(12, 13, 6, 0.15);
+    border: 1px solid rgba(12, 13, 6, 0.15);
+
+    @media (max-width: 1024px) {
+      height: calc(100% - 54px);
+      bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      height: calc(100% - 45px);
+    }
+  }
+}
+
+.drawALine:last-child {
+  &::before {
+    display: none;
+  }
+}
+
+/* accordion styling is here */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* transition linear */
+.linearCarousel {
+  .swiper-free-mode>.swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+}
+
+.getInTouchForm {
+  label {
+    /* typography */
+    font-family: "Sunset Gothic Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0c0d06;
+    /* ---- */
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    display: block;
+    width: 100%;
+    background: rgba(12, 13, 6, 0.05);
+    border-radius: 12px;
+    color: #0c0d060d;
+    border: 1px solid #ffffff00;
+    height: 48px;
+  }
+}
+
+.radio-wrapper input[type="radio"] {
+  display: none;
+}
+
+.custom-radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background-color: #e5e5e5;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.radio-wrapper input[type="radio"]:checked+.custom-radio {
+  background-color: var(--reddishPurple);
+}
+
+.radio-wrapper input[type="radio"]:checked+.custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(12, 13, 6, 0.05);
+  border-radius: 50%;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  background-color: rgba(12, 13, 6, 0.05);
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked+.custom-checkbox {
+  background-color: var(--reddishPurple);
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 4.5px;
+  left: 7px;
+  width: 4px;
+  height: 8px;
+  border: solid rgba(12, 13, 6, 0.05);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* .authenticationScreenHeight {
+  height: calc(100vh - 164px);
+  overflow-y: auto;
+} */
+
+.formInputs {
+
+  /* & label {
+    margin-bottom: 6px;
+  } */
+  & input,
+  & input:-webkit-autofill,
+  & textarea,
+  & select {
+    width: 100%;
+    background: rgba(12, 13, 6, 0.05);
+    border-radius: 12px;
+    font-size: 16px;
+    height: 48px;
+    padding: 8px 12px;
+    border: 0;
+
+    &:active,
+    &:focus-visible,
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    @media (max-width: 600px) {}
+  }
+
+  & select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+
+  & textarea {
+    height: 145px;
+
+    @media (max-width: 600px) {
+      height: 84px;
+    }
+  }
+}
+
+.customSelectDesign {
+  & .css-b62m3t-container {
+    & .css-13cymwt-control {
+      width: 100%;
+      background: rgba(12, 13, 6, 0.05);
+      border-radius: 12px;
+      font-size: 16px;
+      min-height: 48px !important;
+      height: fit-content !important;
+      /* height: fit-content; */
+      padding: 0 16px;
+      border: 0;
+    }
+
+    & .css-t3ipsp-control {
+      min-height: 48px !important;
+      /* max-height: 48px; */
+      padding: 0 16px !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
+      border-radius: 12px !important;
+      background-color: rgba(12, 13, 6, 0.05);
+    }
+
+    & .css-hlgwow {
+      padding: 0;
+
+      & input {}
+    }
+
+    & .css-19bb58m {
+      height: 48px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.btn {
+  background: rgba(12, 13, 6, 0.05);
+  box-shadow: 0px 1px 2px rgba(12, 13, 6, 0.05),
+    inset 0px 0px 0px 1px rgba(12, 13, 6, 0.05),
+    inset 0px -2px 1px rgba(12, 13, 6, 0.05);
+  border-radius: 100px;
+  height: 44px;
+}
+
+.forms {
+  width: 100%;
+  background: rgba(12, 13, 6, 0.05) !important;
+  border-radius: 12px !important;
+  font-size: 16px;
+  height: 48px !important;
+  padding: 8px 12px !important;
+  border: 0;
+
+  &:active,
+  &:focus-visible,
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.searchBrand {
+  border-radius: 12px !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  padding: 12px !important;
+}
+
+/* checkbox style */
+.checkboxWrapper input[type="checkbox"] {
+  width: 8px;
+  height: 8px;
+}
+
+.dropdownIcon {
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M16.293%208.29297L12%2012.586L7.70697%208.29297L6.29297%209.70697L12%2015.414L17.707%209.70697L16.293%208.29297Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E);
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  appearance: none;
+}
