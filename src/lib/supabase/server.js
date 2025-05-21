@@ -8,8 +8,8 @@ export default async function createClient() {
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
   );
   return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    "https://xnyaonbulqqqerinkwei.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhueWFvbmJ1bHFxcWVyaW5rd2VpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ4OTI1NDIsImV4cCI6MjA2MDQ2ODU0Mn0.-zR5t9NdPcDisJcjhAQEuYImu2SBo_Pq0PLo3gapMhc",
     {
       cookies: {
         getAll: () => cookieStore.getAll(),
