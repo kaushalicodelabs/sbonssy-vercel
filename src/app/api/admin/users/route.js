@@ -1,7 +1,7 @@
-import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
-import User from "@/models/User";
 import createClient from "@/lib/supabase/server";
+import User from "@/models/User";
+import { NextResponse } from "next/server";
 
 export async function GET(request) {
   try {
